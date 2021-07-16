@@ -2,4 +2,4 @@
 一键安装常用环境
 
 ## jdk linux
-[jdk](./jdk.jpg)
+[./jdk_install.sh](./jdk.jpg)
