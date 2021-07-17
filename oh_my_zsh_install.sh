@@ -12,14 +12,14 @@ if [ -f "/usr/bin/zsh" ]; then
   # 安装oh-my-zsh
   ZSH= sh -c "$(curl -fsSL https://raw.githubusercontent.com/shavchen/env_install_scripts/main/oh-my-zsh.sh)" > /dev/null 2>&1
   echo -e "\e[0;32m 已安装 oh-my-zsh \e[0m"
-  if [ ! -d "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
-    git clone git://github.com/zsh-users/zsh-autosuggestions  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions > /dev/null 2>&1
+  if [ ! -d "~/.oh-my-zsh/plugins/zsh-autosuggestions" ]; then
+    git clone git://github.com/zsh-users/zsh-autosuggestions  ~/.oh-my-zsh/plugins/zsh-autosuggestions > /dev/null 2>&1
     echo -e "\e[0;32m 已下载zsh-autosuggestions\e[0m"
   else
     echo "[*] $ZSH_CUSTOM/plugins/zsh-autosuggestions exists..."
   fi
-  if [ ! -d "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting > /dev/null 2>&1
+  if [ ! -d "~/.oh-my-zsh/plugins/zsh-syntax-highlighting" ]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting > /dev/null 2>&1
     echo -e "\e[0;32m 已下载zsh-syntax-highlighting.\e[0m"
   else
     echo "[*]  $ZSH_CUSTOM/plugins/zsh-syntax-highlighting  exists...."
