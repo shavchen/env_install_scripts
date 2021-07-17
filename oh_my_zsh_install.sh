@@ -5,7 +5,7 @@ if [ -f "/usr/bin/zsh" ]; then
   echo -e "\e[0;32m 已安装zsh\e[0m"
   shell=`echo $SHELL`
   if [[ $shell =~ "zsh" ]]; then
-    echo -e "\e[0;32m当前使用终端工具:$shell\e[0m"
+    echo -e "\e[0;32m 当前使用终端工具:$shell\e[0m"
   else
     echo -e "\e[0;31m 请切换到zsh\e[0m"
   fi
