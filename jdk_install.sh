@@ -22,7 +22,6 @@ else
   tar zxvf /opt/java/$1 -C /opt/java/$ver --strip-components 1 > /dev/null 2>&1
   rm /opt/java/$1
   echo -e "\e[1;32m 已删除 /opt/java/$1"
-  tar zxvf /opt/java/$1 -C /opt/java/$ver --strip-components 1 > /dev/null 2>&1
   echo -e "\e[1;32m 解压完成\e[0m"
 fi
 
