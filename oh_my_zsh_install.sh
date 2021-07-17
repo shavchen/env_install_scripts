@@ -16,12 +16,14 @@ if [ -f "/usr/bin/zsh" ]; then
   fi
   if [ ! -d "~/.oh-my-zsh/plugins/zsh-autosuggestions" ]; then
     git clone git://github.com/zsh-users/zsh-autosuggestions  ~/.oh-my-zsh/plugins/zsh-autosuggestions > /dev/null 2>&1
+    source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
     echo -e "\e[0;32m 已下载zsh-autosuggestions\e[0m"
   else
     echo "[*] ~/.oh-my-zsh/plugins/zsh-autosuggestions exists..."
   fi
   if [ ! -d "~/.oh-my-zsh/plugins/zsh-syntax-highlighting" ]; then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting > /dev/null 2>&1
+    source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     echo -e "\e[0;32m 已下载zsh-syntax-highlighting.\e[0m"
   else
     echo "[*]  ~/.oh-my-zsh/plugins/zsh-syntax-highlighting  exists...."
