@@ -2,8 +2,7 @@
 一键安装常用环境
 
 ## jdk_install
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/shavchen/env_install_scripts/main/jdk_install.sh)" jdk-8u112-linux-x64.tar.gz
-![./jdk_install.sh](https://github.com/shavchen/env_install_scripts/blob/main/jdk.png?raw=true)
+curl -s https://raw.githubusercontent.com/shavchen/env_install_scripts/main/jdk_install.sh | bash /dev/stdin jdk-8u112-linux-x64.tar.gz![./jdk_install.sh](https://github.com/shavchen/env_install_scripts/blob/main/jdk.png?raw=true)
 
 ## oh_my_zsh_install
 source  <(curl -s https://raw.githubusercontent.com/shavchen/env_install_scripts/main/oh_my_zsh_install.sh)
